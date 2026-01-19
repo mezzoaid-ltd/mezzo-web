@@ -34,8 +34,13 @@ const menuData = [
   },
   {
     id: 6,
-    title: "Blog",
-    path: "/blog",
+    title: "About",
+    path: "/about",
+  },
+  {
+    id: 7,
+    title: "Contact",
+    path: "/contact",
   },
 ];
 
@@ -71,14 +76,14 @@ const Header = () => {
         <div className="flex w-full items-center justify-between xl:w-1/4">
           <a href="/">
             <Image
-              src="/images/logo/logo-dark.svg"
+              src="/images/logo/logo-dark.png"
               alt="Mezzo Aid Logo"
               width={119.03}
               height={30}
               className="hidden w-full dark:block"
             />
             <Image
-              src="/images/logo/logo-light.svg"
+              src="/images/logo/logo-light.png"
               alt="Mezzo Aid Logo"
               width={119.03}
               height={30}

@@ -32,14 +32,16 @@ const Footer = () => {
                   <Image
                     width={140}
                     height={32}
-                    src="/images/logo/logo-light.png"
+                    // src="/images/logo/logo-light.png"
+                    src="https://res.cloudinary.com/du1xl0zr2/image/upload/v1768843966/apple-touch-icon_a1rdhn.png"
                     alt="Mezzo Aid Logo"
                     className="dark:hidden"
                   />
                   <Image
                     width={140}
                     height={32}
-                    src="/images/logo/logo-dark.png"
+                    // src="/images/logo/logo-dark.png"
+                    src="https://res.cloudinary.com/du1xl0zr2/image/upload/v1768843396/logo-dark_b5nfvo.png"
                     alt="Mezzo Aid Logo"
                     className="hidden dark:block"
                   />

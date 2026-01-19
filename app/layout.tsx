@@ -6,8 +6,9 @@ import Proivder from "./Provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Solid | Next.js Template for Startup and SaaS",
-  description: "Built with Next.js and TypeScript",
+  title: "Mezzo Aid | Empowering African Entrepreneurs",
+  description:
+    "Connecting African entrepreneurs with resources, mentorship, and funding to build successful businesses.",
   icons: {
     icon: "/images/favicon.ico",
   },

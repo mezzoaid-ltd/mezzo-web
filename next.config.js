@@ -19,6 +19,16 @@ const nextConfig = {
         hostname: "res.cloudinary.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "images.ctfassets.net",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "downloads.ctfassets.net",
+        port: "",
+      },
     ],
   },
 };

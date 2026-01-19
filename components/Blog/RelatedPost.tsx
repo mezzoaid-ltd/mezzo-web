@@ -1,41 +1,51 @@
-import React from "react";
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import BlogData from "./blogData";
+import { getImageUrl } from "@/services/contentful";
 
-const RelatedPost = async () => {
+interface RelatedPostsProps {
+  relatedPosts?: any[];
+}
+
+const RelatedPosts = ({ relatedPosts }: RelatedPostsProps) => {
+  if (!relatedPosts || relatedPosts.length === 0) return null;
+
   return (
-    <>
-      <div className="animate_top rounded-md border border-stroke bg-white p-9 shadow-solid-13 dark:border-strokedark dark:bg-blacksection">
-        <h4 className="mb-7.5 text-2xl font-semibold text-black dark:text-white">
-          Related Posts
-        </h4>
+    <div className="animate_top border-stroke shadow-solid-13 dark:border-strokedark dark:bg-blacksection rounded-md border bg-white p-9">
+      <h4 className="mb-7.5 text-2xl font-semibold text-black dark:text-white">
+        Related Posts
+      </h4>
+      <div>
+        {relatedPosts.slice(0, 3).map((post, index) => {
+          const imageUrl =
+            getImageUrl(post.fields?.featuredImage) ||
+            "/images/blog/blog-placeholder.png";
 
-        <div>
-          {BlogData.slice(0, 3).map((post, key) => (
+          return (
             <div
+              key={post.sys?.id || index}
               className="mb-7.5 flex flex-wrap gap-4 xl:flex-nowrap 2xl:gap-6"
-              key={key}
             >
-              <div className="max-w-45 relative h-18 w-45">
-                {post.mainImage ? (
-                  <Image fill src={post.mainImage} alt="Blog" />
-                ) : (
-                  "No image"
-                )}
+              <div className="relative h-18 w-45 max-w-45">
+                <Image
+                  fill
+                  src={imageUrl}
+                  alt={post.fields?.title || "Related post"}
+                  className="object-cover"
+                />
               </div>
-              <h5 className="text-md font-medium text-black transition-all duration-300 hover:text-primary dark:text-white dark:hover:text-primary">
-                <Link href={`/blog/blog-details`}>
-                  {" "}
-                  {post.title.slice(0, 40)}...
+              <h5 className="text-md font-medium text-black transition-all duration-300 hover:text-[#5B1B8D] dark:text-white">
+                <Link href={`/blog/${post.fields?.slug}`}>
+                  {post.fields?.title?.slice(0, 40)}...
                 </Link>
               </h5>
             </div>
-          ))}
-        </div>
+          );
+        })}
       </div>
-    </>
+    </div>
   );
 };
 
-export default RelatedPost;
+export default RelatedPosts;

@@ -162,14 +162,14 @@ const Header = () => {
             <ThemeToggler />
 
             <Link
-              href="https://app.mezzoaid.com/login"
+              href="https://app.mezzoaid.com/sign-in"
               className="text-regular text-waterloo font-medium hover:text-[#5B1B8D]"
             >
               Login
             </Link>
 
             <Link
-              href="https://app.mezzoaid.com/signup/entrepreneur"
+              href="https://app.mezzoaid.com/sign-up"
               className="text-regular flex items-center justify-center rounded-full bg-[#5B1B8D] px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-[#7B2CBF]"
             >
               Get Started Free

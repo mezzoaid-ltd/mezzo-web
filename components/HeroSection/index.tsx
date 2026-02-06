@@ -43,7 +43,7 @@ const HeroSection = () => {
 
             <div className="flex flex-wrap gap-5">
               <a
-                href="https://app.mezzoaid.com/signup/entrepreneur"
+                href="https://app.mezzoaid.com/sign-up"
                 className="inline-flex items-center justify-center rounded-full bg-[#5B1B8D] px-7.5 py-3.5 font-medium text-white transition-all hover:bg-[#7B2CBF]"
               >
                 Start Your Journey Free

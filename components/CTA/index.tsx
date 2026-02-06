@@ -64,7 +64,7 @@ const CTA = () => {
                   className="hidden xl:block"
                 />
                 <a
-                  href="https://app.mezzoaid.com/signup/entrepreneur"
+                  href="https://app.mezzoaid.com/sign-up"
                   className="inline-flex items-center gap-2.5 rounded-full bg-[#5B1B8D] px-6 py-3 font-medium text-white transition-all hover:bg-[#7B2CBF]"
                 >
                   Start Your Free Journey

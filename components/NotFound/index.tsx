@@ -76,7 +76,7 @@ const NotFound = () => {
                 </Link>
 
                 <Link
-                  href="https://app.mezzoaid.com/signup/entrepreneur"
+                  href="https://app.mezzoaid.com/sign-up"
                   className="inline-flex items-center gap-2.5 rounded-full border-2 border-[#5B1B8D] px-7.5 py-3.5 font-medium text-[#5B1B8D] transition-all hover:bg-[#5B1B8D] hover:text-white"
                 >
                   Start Your Quest

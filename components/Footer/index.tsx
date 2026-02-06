@@ -90,7 +90,7 @@ const Footer = () => {
                 <ul className="space-y-4">
                   <li>
                     <a
-                      href="https://app.mezzoaid.com/signup/entrepreneur"
+                      href="https://app.mezzoaid.com/sign-up"
                       className="text-base transition-colors hover:text-[#5B1B8D] dark:hover:text-[#7B2CBF]"
                     >
                       Start Free Quest
